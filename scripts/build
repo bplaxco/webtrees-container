@@ -1,0 +1,7 @@
+#! /usr/bin/bash
+set -ex
+
+podman build \
+  --no-cache \
+  --build-arg=WEBTREES_VERSION=$(./scripts/version) \
+  --tag quay.io/lupnix/webtrees:$(./scripts/version) .

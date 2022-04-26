@@ -1,0 +1,4 @@
+#! /usr/bin/bash
+set -ex
+
+podman push quay.io/lupnix/webtrees:$(./scripts/version)
