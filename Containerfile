@@ -1,4 +1,4 @@
-FROM registry.redhat.io/ubi9/php-80@sha256:314c4ed6c3f0f1cd592a3b152cb9c9ef387e35432be1d08bdb2aa176940d8c3a
+FROM registry.redhat.io/ubi9/php-80@sha256:ead84d80aae6fbb28aab88f3d6534413e848ba759cb22380d16878bf0512f59b
 ARG WEBTREES_VERSION
 
 RUN \
