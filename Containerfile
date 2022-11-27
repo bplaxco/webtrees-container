@@ -4,8 +4,7 @@ ARG WEBTREES_VERSION
 RUN \
   cd /tmp && echo "Installing webtrees version ${WEBTREES_VERSION}" && \
   curl -L https://github.com/fisharebest/webtrees/archive/refs/tags/${WEBTREES_VERSION}.tar.gz | tar -xz && \
-  mv webtrees-${WEBTREES_VERSION}/* ${APP_DATA} && rmdir webtrees-${WEBTREES_VERSION} && \
-  bash
+  mv webtrees-${WEBTREES_VERSION}/* ${APP_DATA} && rmdir webtrees-${WEBTREES_VERSION} 
 
 RUN \
     mkdir -p ${APP_ROOT}/bin && \
