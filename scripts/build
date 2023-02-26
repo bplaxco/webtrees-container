@@ -1,6 +1,7 @@
 #! /usr/bin/bash
 set -ex
 
+podman pull registry.redhat.io/ubi9/php-80:latest
 podman build \
   --cache-ttl=8h \
   --build-arg=WEBTREES_VERSION=$(./scripts/version) \
