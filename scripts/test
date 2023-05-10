@@ -1,0 +1,8 @@
+#! /bin/bash
+set -exuo pipefail
+
+./scripts/run &
+sleep 10
+
+curl -k https://localhost:8443 | grep -i 'setup wizard' &> /dev/null
+podman kill webtrees

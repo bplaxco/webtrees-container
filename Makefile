@@ -8,6 +8,10 @@ clean:
 build:
 	@./scripts/$@
 
+.PHONY: test
+test:
+	@./scripts/$@
+
 .PHONY: sign
 sign:
 	@./scripts/$@

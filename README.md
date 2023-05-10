@@ -33,6 +33,10 @@ Build the image.
 
 Run the image locally.
 
+### `test`
+
+Run and test the image locally.
+
 ### `sign`
 
 Sign the latest published image and store the signature in `./sigstore`.
